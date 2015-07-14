@@ -7,3 +7,6 @@ gem 'kindlegen', '~> 2.9.5'
 
 # Code highlight
 gem 'rouge', '~> 1.9.1'
+
+# Rake
+gem 'rake', '~> 10.4.2'
