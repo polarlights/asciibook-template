@@ -1,7 +1,11 @@
 desc "Build all formats"
-task :build => ['build:pdf', 'build:epub', 'build:mobi']
+task :build => ['build:html', 'build:pdf', 'build:epub', 'build:mobi']
 
 namespace :build do
+  desc "Build HTML format"
+  task :html do
+    `bundle exec asciidoctor -D build/html book.adoc`
+  end
   desc "Build PDF format"
   task :pdf do
     `bundle exec asciidoctor-pdf -D build book.adoc`
