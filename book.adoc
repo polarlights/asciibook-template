@@ -1,6 +1,6 @@
 = Book Title
 Author Name <author@example.com>
-v0.1.0, 2015-7-14
+v0.1.0, {docdate}
 :doctype: book
 :toc: left
 
