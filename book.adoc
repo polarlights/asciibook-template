@@ -4,4 +4,4 @@ v0.1.0, {docdate}
 :doctype: book
 :toc: left
 
-include::chapters/chapters-one.adoc[]
+include::chapters/one.adoc[]
