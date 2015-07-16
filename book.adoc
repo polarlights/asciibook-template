@@ -1,7 +1,7 @@
 = Book Title
 Author Name <author@example.com>
-v0.1.0, {docdate}
 :doctype: book
+:revnumber: 0.1.0
 :toc: left
 
 include::chapters/one.adoc[]
