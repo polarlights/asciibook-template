@@ -20,17 +20,17 @@ namespace :build do
 
   desc "Build PDF format"
   task :pdf do
-    `bundle exec asciidoctor -r asciidoctor-pdf -D build -o #{docname}-#{version}.pdf #{file_path}`
+    `bundle exec asciidoctor-pdf -D build -o #{docname}-#{version}.pdf #{file_path}`
   end
 
   desc "Build EPUB format"
   task :epub do
-    `bundle exec asciidoctor -r asciidoctor-epub3 -D build -o #{docname}-#{version}.epub #{file_path}`
+    `bundle exec asciidoctor-epub3 -D build -o #{docname}-#{version}.epub #{file_path}`
   end
 
   desc "Build MOBI format"
   task :mobi do
-    `bundle exec asciidoctor -r asciidoctor-epub3 -D build -o #{docname}-#{version}.mobi -a ebook-format=kf8 #{file_path}`
+    `bundle exec asciidoctor-epub3 -D build -o #{docname}-#{version}.mobi -a ebook-format=kf8 #{file_path}`
   end
 end
 
